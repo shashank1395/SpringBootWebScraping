@@ -14,9 +14,7 @@ import com.boot.webscraping.service.ScrapperServiceImpl;
 public class SpringBootWebScrapingApplication {
 
 	public static void main(String[] args) throws IOException {
-		ApplicationContext applicationContext = SpringApplication.run(SpringBootWebScrapingApplication.class, args);
-		ScrapperServiceImpl service = applicationContext.getBean(ScrapperServiceImpl.class);
-		service.getArticles();
+		SpringApplication.run(SpringBootWebScrapingApplication.class, args);
 	}
 
 }
